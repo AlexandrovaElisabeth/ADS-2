@@ -5,8 +5,8 @@
 
 double pown(double value, uint16_t n) {
 if (n == 0) {return 1;}
-else if (n == 1) {return value;}
-if (value == 1 || value == 0) {return value;}
+else if (n == 1) return value;
+if (value == 1 || value == 0) return value;
 double res = 1;
 for (uint16_t i = 0; i < n; i++) {res *= value;}
 return res;
@@ -14,9 +14,9 @@ return res;
 
 uint64_t fact(uint16_t n) {
 uint16_t res = 1;
-if (n == 0) {return 1;}
-else if (n > 0) {
-for (uint16_t i = n; i > 0; i--) {res *= i;}}
+if (n == 0) return 1;
+else if (n > 0) 
+for (uint16_t i = n; i > 0; i--) {res *= i;}
 return res;
 }
 
